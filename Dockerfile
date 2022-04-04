@@ -1,11 +1,13 @@
-FROM ubuntu:20.04
+FROM node:16-alpine
 
 WORKDIR /usr/src/app
 
-COPY curl.sh .
+COPY package*.json ./
 
-RUN chmod +x curl.sh
-RUN apt-get update
-RUN apt-get install curl -y
+RUN npm install
 
-CMD ./curl.sh
+COPY --chown=node:node . .
+
+EXPOSE 8080
+
+CMD ["node", "server.js"]

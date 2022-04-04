@@ -6,6 +6,3 @@ Kosti Korhonen
 ## To run
 
 
-docker build -t curling .
-
-docker run -it curling
