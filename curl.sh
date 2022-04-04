@@ -1,1 +1,1 @@
-echo "Input website:"; echo "website=google.com"; echo "Searching.."; sleep 1; curl http://google.com;
+echo "MAKING IT VERY SIMPLE";
