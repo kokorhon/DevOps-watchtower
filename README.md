@@ -7,4 +7,5 @@ Kosti Korhonen
 
 
 docker build -t curling .
+
 docker run -it curling
