@@ -5,4 +5,5 @@ Kosti Korhonen
 
 ## To run
 
-
+docker build -t app .
+docker run --name application app
