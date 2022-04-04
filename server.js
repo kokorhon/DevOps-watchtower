@@ -6,5 +6,5 @@ const server = app.listen(8080, () => {
 });
 
 app.get('/', (req, res) => {
-  res.send('Changed text :^)');
+  res.send('TESTING THE RUNNING FROM CONTAINER 🤑');
 });
